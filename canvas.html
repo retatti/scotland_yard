@@ -15,10 +15,37 @@
 
     </head>
     <body>
+        <!----- header ----->
+        <header>
+          <nav class="navbar navbar-dark bg-dark">
+              <a href="#" class="navbar-brand">Scotland yard</a>
+              <!-- ナビゲーションボタン -->
+              <button class="navbar-toggler nav-extend" type="button"
+                  data-toggle="collapse"
+                  data-target="#navmenu1"
+                  aria-controls="navmenu1"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- ナビゲーションメニュー -->
+              <div class="collapse navbar-collapse" id="navmenu1">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#">Game</a>
+                    <a class="nav-item nav-link" href="#">Sign up</a>
+                    <a class="nav-item nav-link" href="#">Sign in</a>
+                    <a class="nav-item nav-link" href="#">Sign out</a>
+                  </div>
+              </div>
+          </nav>
+        </header>
+        <!----- /header ----->
+        
+
         <!----- main ----->
         <div class="container-fulid text-center mr-3 ml-3 mt-3 mb-3">
             <h2>次は[Player]のターンです</h2>
-            <canvas id="my_canvas" width="500" height="500"></canvas>
+            <canvas id="my_canvas" width="800" height="500"></canvas>
             <button id="test" type="button" class="btn btn-success mt-3 mb-3" onclick="buttonClick()">テスト</button>
             
             <table class="table">
@@ -53,16 +80,8 @@
             </table>  
   
         </div>
-
-        
-        
-
-
         <!----- /main ----->
 
-        <!----- footer ----->
-        <!-- <footer>フッター</footer> -->
-        <!----- /footer ----->
         
 
         <script type="text/javascript" src="main.js"></script>
